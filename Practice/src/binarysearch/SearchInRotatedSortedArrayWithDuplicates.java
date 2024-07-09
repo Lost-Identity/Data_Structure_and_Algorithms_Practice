@@ -10,7 +10,7 @@ public class SearchInRotatedSortedArrayWithDuplicates {
 
             int mid = (low + high) / 2;
 
-            //if mid points to the target
+            //if mid-points to the target
             if(arr[mid] == k) return true;
 
             //edge case
@@ -48,7 +48,7 @@ public class SearchInRotatedSortedArrayWithDuplicates {
         int[] arr = {7, 8, 1, 2, 3, 3, 3, 3, 4, 5, 6};
         int k = 3;
         boolean ans = searchInRotatedSortedArray(arr, k);
-        if(ans == false)
+        if(!ans)
             System.out.println("Target is not present");
         else
             System.out.println("Target is present in the array");
